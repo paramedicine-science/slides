@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Paramedicine science</title>
+
+		<meta name="description" content="A platform for paramedical research and technology">
+		<meta name="author" content="Nico Preston">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/night.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<a href="https://paramedic.science">
+						<img src="https://dsci-field-guide.s3.ca-central-1.amazonaws.com/Star_of_life.svg" alt="reveal.js logo" style="height: 180px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+						<img src="https://dsci-field-guide.s3.ca-central-1.amazonaws.com/ps-logo.svg" alt="reveal.js logo" style="height: 180px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+					</a>
+					<!-- <h3>Paramedicine Science</h3> --> 
+					<h4>- The Data Scientist's Jumpkit -</h4>
+					<p>
+						<small>By <a href="http://nicopresto.com">Nico Preston, Ph.D.</a></small>
+					</p>
+				</section>
+
+				<section>
+					<h2>Background</h2>
+					<p>
+						Data Science & Paramedicine
+					</p>
+					<ul>
+						<li>Disease Ecology</li>
+
+						<li>Decision Support</li>
+
+						<li>Computational Epidemiology</li>
+
+						<li>Geospatial Situation Awareness</li>
+					</ul>
+				</section>
+
+				<!-- Example of nested vertical slides -->
+				
+				<section>
+					<h2>Technology?</h2>
+					<p>
+						Not a coder, yet? No problem. There's detailed documention in the Field Guide at <a href="https://paramedicine.science" target="_blank">https://paramedicine.science</a>
+					</p>
+				</section>
+
+				<section data-background-iframe="https://paramedicine.science" data-background-interactive>
+					<!-- <div style="position: absolute; width: 30%; right: -50; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 10px; font-size: 20px; text-align: left;">
+						<p>Click Here</p>
+					</div> -->
+				</section>
+
+				<section>
+					<h2>Raw Ingredients</h2>
+					<iframe src="https://giphy.com/embed/xT9C25UNTwfZuk85WP" width="580" height="400" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/Giflytics-gif-jazminantoinette-giflytics-xT9C25UNTwfZuk85WP"></a></p>
+					<p>Digital exhaust from every call</p>
+				</section>
+
+				<section>
+					<img src="https://dsci-field-guide.s3.ca-central-1.amazonaws.com/turtles-all-the-way.jpeg" />
+					<h3 class="r-fit-text">Full Stack</h3>
+					<p class="r-fit-text">From data to insights</p>
+					<br>
+				</section>
+
+
+				<section>
+
+					
+					<section id="fragments">
+						<h2>Pre-requisites</h2>
+						<ol>
+							<li class="fragment">Terminal ...</li>
+							<li class="fragment">Scripting Language (Python) ...</li>
+						</ol>
+						<!-- <a class="navigate-down">
+							<img class="r-frame" style="background: rgba(255,255,255,0.1);" width="178" height="238" data-src="https://static.slid.es/reveal/arrow.png" alt="Down arrow">
+						</a> -->
+
+					</section>
+
+					<!-- <section data-auto-animate>
+						<h2 data-id="code-title">Terminal</h2>
+						<pre data-id="code-animation"><code class="language-shell" data-trim data-line-numbers="|4,8-11|17|22-24"><script type="text/template">
+							# 1 - Install and update Package Manager (Homebrew)
+							/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+							
+							## Examine the terminal output to ensure install was successful
+							## You may see 2 scripts to run in your shell to add brew to your PATH
+							
+							# Update & upgrade brew
+							brew update && brew upgrade
+							
+							# 2 - Install version control (Git)
+							brew install git
+							
+							# 3 - Install code editor (Visual Studio)
+							brew install --cask visual-studio-code
+							
+							# 4 - Install scripting virtual environment (Python venv)
+							## Used to brew install Python here but better to install from python.org
+							python3.10 -m pip install --upgrade pip
+							python3.10 -m pip install --user virtualenv
+							
+							# 5 - Build data science virtual environment (Jupyter)
+							cd ~
+							mkdir -p dsci/data dsci/code
+							cd dsci
+							python3.10 -m venv .venv
+							source .venv/bin/activate
+							
+							python -m pip install polars pandas jupyter jupyterlab numpy matplotlib plotly pyarrow kaleido
+							
+							## Open Jupyter Lab
+							python -m jupyter lab
+							
+							## Open Jupyter notebook with browser http://localhost:8888/
+
+
+						</script></code></pre>
+					</section> -->
+
+					<!-- <section data-background="https://giphy.com/embed/s6bPeCFQwfp3TwW6QA"> -->
+
+					<section data-background="https://dsci-field-guide.s3.ca-central-1.amazonaws.com/terminal-record-4k.gif">
+
+						<!-- <iframe src="https://giphy.com/embed/s6bPeCFQwfp3TwW6QA" width="480" height="324" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/s6bPeCFQwfp3TwW6QA"> Using the terminal</a></p> -->
+						
+						<h3 style="line-height: 100px;">Using the terminal</h3>
+
+					</section>
+
+					<section>
+						<h2>Scripting Language</h2>
+						<p>Programming ...</p>
+						<iframe src="https://giphy.com/embed/2yP1jNgjNAkvu" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/monty-python-2yP1jNgjNAkvu"></a></p>
+					</section>
+
+					<section>
+						<h2>Scripting Language</h2>
+						<p>Python</p>
+						<img src="https://dsci-field-guide.s3.ca-central-1.amazonaws.com/python-cartoon.jpeg" />
+					</section>
+	
+					<section data-auto-animate>
+						<h2 data-id="code-title">Python</h2>
+							<h3> Build a Calculator</h3>
+						<pre data-id="code-animation"><code class="language-python" data-trim data-line-numbers="|4,8-11|25-26|46-47"><script type="text/template">
+						# This function adds two numbers
+						def add(x, y):
+							return x + y
+
+						# This function subtracts two numbers
+						def subtract(x, y):
+							return x - y
+
+						# This function multiplies two numbers
+						def multiply(x, y):
+							return x * y
+
+						# This function divides two numbers
+						def divide(x, y):
+							return x / y
+
+
+						print("Select operation.")
+						print("1.Add")
+						print("2.Subtract")
+						print("3.Multiply")
+						print("4.Divide")
+
+						while True:
+							# take input from the user
+							choice = input("Enter choice(1/2/3/4): ")
+
+							# check if choice is one of the four options
+							if choice in ('1', '2', '3', '4'):
+								try:
+									num1 = float(input("Enter first number: "))
+									num2 = float(input("Enter second number: "))
+								except ValueError:
+									print("Invalid input. Please enter a number.")
+									continue
+
+								if choice == '1':
+									print(num1, "+", num2, "=", add(num1, num2))
+
+								elif choice == '2':
+									print(num1, "-", num2, "=", subtract(num1, num2))
+
+								elif choice == '3':
+									print(num1, "*", num2, "=", multiply(num1, num2))
+
+								elif choice == '4':
+									print(num1, "/", num2, "=", divide(num1, num2))
+								
+								# check if user wants another calculation
+								# break the while loop if answer is no
+								next_calculation = input("Let's do next calculation? (yes/no): ")
+								if next_calculation == "no":
+								break
+							else:
+								print("Invalid Input")
+
+							</script></code></pre>
+						</section>
+
+
+					</section>
+
+				<section>
+
+					<section data-background="https://dsci-field-guide.s3.ca-central-1.amazonaws.com/full-stack.jpg"/>
+						<h3>Full Stack</h3>
+						<p>From data to insights</p>
+						<br>
+						<!-- <a class="navigate-down">
+							<img class="r-frame" style="background: rgba(255,255,255,0.1);" width="178" height="238" data-src="https://static.slid.es/reveal/arrow.png" alt="Down arrow">
+						</a> -->
+					</section>
+
+					<section id="fragments">
+						<h2>5 Delicious Layers</h2>
+						<ol>
+							<li class="fragment">Package Manager (Brew/winget/apt/pip)...</li>
+							<li class="fragment">Version Control (Git)...</li>
+							<li class="fragment">Code Editor (Visual Studio Code)...</li>
+							<li class="fragment">Virtual Environment (Venv) ...</li>
+							<li class="fragment">Notebook (Jupyter)... </li>
+						</ol>
+
+					</section>
+
+
+
+					<section>
+						<h2>1) Package Manager</h2>
+						<img src="https://imgs.xkcd.com/comics/universal_install_script.png" />
+						<br />
+						<a href="https://imgs.xkcd.com/comics/"><small>Source: XKCD</small></a>
+					</section>
+
+					<section>
+						<h2>Package Manager</h2>
+						<img src="https://dsci-field-guide.s3.ca-central-1.amazonaws.com/compiling.jpeg" />
+						<br />
+						<a href="https://itsfoss.com/package-manager/"><small></small>Source: It's FOSS</small></a>
+					</section>
+
+					<section>
+						<h2>Package Manager</h2>
+						<img src="https://dsci-field-guide.s3.ca-central-1.amazonaws.com/package-managers.jpeg" />
+						<br />
+						<a href="https://itsfoss.com/package-manager/"><small></small>Source: It's FOSS</small></a>
+					</section>
+
+					<section data-background-iframe="https://brew.sh/" data-background-interactive>
+					</section>
+					<section data-background-iframe="https://en.wikipedia.org/wiki/Windows_Package_Manager" data-background-interactive>
+					</section>
+					<section data-background-iframe="https://en.wikipedia.org/wiki/APT_(software)" data-background-interactive>
+					</section>
+					<section data-background-iframe="https://pip.pypa.io/en/stable/getting-started/" data-background-interactive>
+					</section>
+					
+
+					<section>
+						<h2>2) Version control</h2>
+						<img src="https://imgs.xkcd.com/comics/universal_install_script.png" />
+						<br />
+						<a href="https://imgs.xkcd.com/comics/"><small>Source: XKCD</small></a>
+					</section>
+
+					<section data-background-iframe="https://rogerdudler.github.io/git-guide/" data-background-interactive>
+					</section>
+					
+					<section>
+						<h2>3) Code editor </h2>
+						<h3>(Visual Studio Code)</h3>
+						<img src="https://imgs.xkcd.com/comics/hottest_editors.png" />
+						<br />
+						<a href="https://imgs.xkcd.com/comics/"><small>Source: XKCD</small></a>
+
+					</section>
+					
+					<section>
+						<img src="https://dsci-field-guide.s3.ca-central-1.amazonaws.com/visual-studio.jpg" />
+						<br />
+						<a href="https://code.visualstudio.com/"><small>Source: Microsoft</small></a>
+					</section>
+
+					<!-- Blocked iFrame -->
+					<!-- <section data-background-iframe="https://code.visualstudio.com/" data-background-interactive>
+					</section> -->
+
+					<section>
+						<h2>4) Virtual Env (venv)</h2>
+						<img src="https://imgs.xkcd.com/comics/python.png" style="height: 400px"  />
+						<br />
+						<a href="https://imgs.xkcd.com/comics/"><small>Source: XKCD</small></a>
+					</section>
+
+					<section>
+						<h2>4) Virtual Env (venv)</h2>
+						<img src="https://dsci-field-guide.s3.ca-central-1.amazonaws.com/py-venv.jpeg" />
+						<br />
+						<a href="https://www.dataquest.io/"><small>Source: DataQuest.io</small></a>
+					</section>
+					
+					<section data-background-iframe="https://docs.python.org/3/library/venv.html" data-background-interactive>
+					</section>
+					
+					<section>
+						<h2>5) Lab Notebook </h2>
+						<h3>(Jupyter)</h3>
+						<img src="https://dsci-field-guide.s3.ca-central-1.amazonaws.com/julia-python-r.jpeg" style="height: 400px" />
+						<br />
+						<a href="https://jupyter.org/"><small>Source: Jupyter</small></a>
+					</section>
+
+					<section data-background-iframe="https://jupyter.org/" data-background-interactive>
+					</section>
+
+					<section>
+						<h2>Stack Complete </h2>
+						<img src="https://dsci-field-guide.s3.ca-central-1.amazonaws.com/full-stack-complete.jpg" />
+						
+					</section>
+				
+				</section>
+
+			</section>
+
+				<section data-background-iframe="https://paramedicine.science/docs/user-guide/scripting-languages" data-background-interactive>
+					<div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h2>Read the docs</p>
+					</div>
+				</section>
+
+
+				<section data-visibility="hidden">
+					<h2>Hidden Slides</h2>
+					<p>
+						This slide is visible in the source, but hidden when the presentation is viewed. You can show all hidden slides by setting the `showHiddenSlides` config option to `true`.
+					</p>
+				</section>
+
+				
+
+				<section data-markdown data-visibility="hidden">
+					<script type="text/template">
+						## Markdown Support
+
+						Write content using inline or external Markdown.
+						Instructions and more info available in the [docs](https://revealjs.com/markdown/).
+
+						```html []
+						<section data-markdown>
+						  ## Markdown Support
+
+						  Write content using inline or external Markdown.
+						  Instructions and more info available in the [docs](https://revealjs.com/markdown/).
+						</section>
+						```
+					</script>
+				</section>
+
+
+				<section style="text-align: left;">
+					<h1>THE END</h1>
+					<p>
+					Please visit <a href="https://paramedicine.science">Paramedicine.Science</a> for more information <br />
+					</p>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+
+		</script>
+
+	</body>
+</html>
